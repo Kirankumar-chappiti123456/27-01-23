@@ -1,0 +1,30 @@
+#include<stdio.h>
+int multiplication(int a,int y,int sum)
+{
+    
+    while(a--)
+    {
+        sum=sum+y;
+    }
+    printf("the multiplication :%d",sum);
+}
+int main()
+{
+    int a,y,sum=0;
+    printf("enter the number:");
+    scanf("%d %d",&a,&y);
+    int (*fptr)(int ,int,int)=multiplication;
+    fptr(a,y,sum);
+}
+
+dry code:
+#include<stdio.h>
+int main()
+{
+    int a=2,n=5,k=0;
+    while(a--)
+    {
+        k=k+n;
+    }
+    printf("%d",k);
+}
